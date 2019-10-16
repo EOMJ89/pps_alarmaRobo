@@ -1,0 +1,18 @@
+.background-card {
+    --background: #86bbd8;
+    --color: #33658a;
+  }
+  
+  ion-card,
+  ion-card-title,
+  ion-label,
+  div {
+    --color: #33658a !important;
+    color: #33658a;
+  }
+  
+  .img-logo {
+    height: 5rem;
+    width: auto;
+  }
+  

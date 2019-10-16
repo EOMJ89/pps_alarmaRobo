@@ -1,6 +1,27 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@font-face {
+  font-family: "Space Ranger";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/spacerangers/spaceranger.ttf");
+}
+
+@font-face {
+  font-family: "Space Ranger Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/spacerangers/spacerangerbold.ttf");
+}
+
+@font-face {
+  font-family: "Space Ranger Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/spacerangers/spacerangerital.ttf");
+}
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,4 +95,15 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+  
+  .ion-color-saffron {
+    --ion-color-base: #f6ae2d;
+  --ion-color-base-rgb: 246,174,45;
+  --ion-color-contrast: #000000;
+  --ion-color-contrast-rgb: 0,0,0;
+  --ion-color-shade: #d89928;
+  --ion-color-tint: #f7b642;
+  }
+
+  --ion-font-family: "Space Ranger";
 }

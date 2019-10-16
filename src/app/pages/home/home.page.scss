@@ -1,0 +1,38 @@
+.alarm {
+  /* padding: 2rem 2rem 2rem 2rem; */
+  border: none;
+  border-radius: 50%;
+  background-color: #33658a;
+  text-align: center;
+  box-shadow: 0 0.75rem #2f4858;
+  outline: none;
+
+  &-deact {
+    background-color: #ea2741;
+    box-shadow: 0 0.75rem #950a1c;
+    color: white;
+  }
+  &-act {
+    background-color: #7fd16e;
+    box-shadow: 0 0.75rem #285f1d;
+    color: black;
+  }
+}
+
+.alarm:active {
+  background-color: #f26419;
+  color: grey;
+  box-shadow: 0 0.4rem #705015;
+  transform: translateY(0.5rem);
+  outline: none;
+}
+
+.square-button {
+  height: 20rem;
+  width: 20rem;
+}
+
+.img-button {
+  height: 12rem;
+  width: 12rem;
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Confirmar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-page">
+  <form [formGroup]="this.formGroup">
+    <ion-item class="transparent-item">
+      <ion-label position="floating">Clave</ion-label>
+      <ion-input type="password" formControlName="clave"></ion-input>
+      <div *ngIf="this.formGroup.controls.clave.touched ==
+        true &&
+        this.formGroup.controls.clave.errors != undefined">
+        <div
+          *ngIf="this.formGroup.controls.clave.errors.required
+          != undefined">La clave es requerida
+        </div>
+      </div>
+    </ion-item>
+    <ion-row class="ion-justify-content-center">
+      <ion-col class="ion-text-center">
+        <ion-button color="success" [disabled]="!this.formGroup.valid"
+          (click)="this.manejarRetorno(true)">Aceptar</ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button color="danger" type="reset"
+          (click)="this.manejarRetorno(false)">Cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
